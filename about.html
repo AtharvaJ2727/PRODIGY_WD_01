@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Tsanta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar (same as index.html) -->
+  <div class="navbar" id="navbar">
+    <div class="logo">TΣANTA</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact Us</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="cart">🛒</div>
+  </div>
+
+  <!-- Simple Content to Scroll -->
+  <div style="margin-top: 120px; padding: 40px; line-height: 1.8;">
+    <h1 class = "about">About ΤΣANTA</h1>
+    <br>
+    <p class="about" id="font">
+      Tsanta is a brand built on the core idea of adaptability and comfort in travel.
+      Our mission is to provide sleek, functional, and stylish backpacks for all explorers.
+    </p>
+    <p class="about" id="font">
+      Whether you are commuting through the city or trekking the mountains, Tsanta’s
+      backpacks are engineered to support you.
+    </p>
+
+    <img class="aboutimg" src="backpack.png"/>
+
+    <div style="height: 10px;"></div>
+
+    <p class="bottext">ΤΣANTA BACKPACKS: <span class="styletext"> Carry Confidence,Travel in Style.</span>
+    </p>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
